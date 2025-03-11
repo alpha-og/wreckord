@@ -1,0 +1,10 @@
+1. Start\\
+2. Read the range 'start' and  'end'\\
+3. Loop till step 8 from 'start' to 'end'\\
+4. If the current number is less than 2, skip.\\
+5. If the current  number is 2, print.\\
+6. Else - check for remainders on division from current number to square root of current number.\\
+7. If no remainders exist - skip.\\
+8. Else - print current number.\\
+9. End\\
+

@@ -1,0 +1,23 @@
+\documentclass[a4paper, 12pt]{article}
+
+% Page layout settings
+\usepackage[a4paper, left=2cm, right=1cm, top=2cm, bottom=1cm]{geometry}
+\usepackage{minted}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{graphicx} % for image inclusion
+\usepackage{float} % for positioning images
+\usepackage{array}
+\usepackage{fancyhdr}  % Load fancyhdr package
+\renewcommand{\headrulewidth}{0pt}  % Remove the horizontal line in header
+\pagestyle{empty}  % Start with an empty default style
+
+\pagestyle{fancy}  
+\fancyhf{}  
+\fancyhead[L]{Date: }  % Increase font size & bold
+\fancyhead[R]{Page No: } 
+
+\pagenumbering{gobble}
+
+\begin{document}

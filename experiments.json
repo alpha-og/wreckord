@@ -1,0 +1,120 @@
+{
+  "experiments": [
+    {
+      "pid": 2,
+      "title": "Shell Scripting Experiment 1",
+      "result": "A bash script for displaying processor information was executed and verified."
+    },
+    {
+      "pid": 3,
+      "title": "Shell Scripting Experiment 2",
+      "result": "A bash script for displaying memory information was executed and verified."
+    },
+    {
+      "pid": 4,
+      "title": "Shell Scripting Experiment 3",
+      "result": "A bash script for a scientific calculator was executed and verified."
+    },
+    {
+      "pid": 5,
+      "title": "Shell Scripting Experiment 4",
+      "result": "A bash script to print prime numbers in a given range was executed and verified."
+    },
+    {
+      "pid": 6,
+      "title": "Shell Scripting Experiment 5",
+      "result": "A menu-driven bash script for number conversion was executed and verified."
+    },
+    {
+      "pid": 7,
+      "title": "Shell Scripting Experiment 6",
+      "result": "A bash script for removing occurrences of a word beyond N times was executed and verified."
+    },
+    {
+      "pid": 8,
+      "title": "Shell Scripting Experiment 7",
+      "result": "A bash script implementing student record management was executed and verified."
+    },
+    {
+      "pid": 9,
+      "title": "Shell Scripting Experiment 8",
+      "result": "A bash script for displaying process information was executed and verified."
+    },
+
+    {
+      "pid": 10,
+      "title": "Process Management - 01",
+      "result": "C program demonstrating the use of fork system call was executed and verified."
+    },
+    {
+      "pid": 11,
+      "title": "Process Management - 02",
+      "result": "C program to display odd and even numbers from input using processes was executed and verified."
+    },
+    {
+      "pid": 12,
+      "title": "Process Scheduling - 01",
+      "result": "C program simulating various scheduling algorithms on a process mix was executed and verified."
+    },
+    {
+      "pid": 13,
+      "title": "Deadlock Handling - 01",
+      "result": "C program simulating banker's algorithm on a process mix was executed and verified."
+    },
+    {
+      "pid": 14,
+      "title": "Memory Management - 01",
+      "result": "C program simulating various paging algorithms was executed and verified."
+    },
+    {
+      "pid": 15,
+      "title": "Memory Management - 02",
+      "result": "C program to determine the best performing memory allocation algorithm was executed and verified."
+    },
+    {
+      "pid": 16,
+      "title": "File Management - 01",
+      "result": "C program to list files and directories in a given path was executed and verified."
+    },
+    {
+      "pid": 17,
+      "title": "Disk Management - 01",
+      "result": "C program to simulate various disk-scheduling algorithms was executed and verified."
+    },
+    {
+      "pid": 18,
+      "title": "Disk Management - 02",
+      "result": "C program to display the system date and time as well as time spent by the process in user and kernel mode was executed and verified."
+    },
+    {
+      "pid": 19,
+      "title": "Multithreading - 01",
+      "result": "C program to calculate the mean, median, and standard deviation for a list of integers in different threads was executed and verified."
+    },
+    {
+      "pid": 20,
+      "title": "Multithreading - 02",
+      "result": "C program to determine time taken by a process to execute a given command was executed and verified."
+    },
+    {
+      "pid": 21,
+      "title": "Multithreading - 03",
+      "result": "C program to demonstrate the use of execvp system call was executed and verified."
+    },
+    {
+      "pid": 22,
+      "title": "Process Synchronization - 01",
+      "result": "C program to solve the TA problem was executed and verified."
+    },
+    {
+      "pid": 23,
+      "title": "Process Synchronization - 02",
+      "result": "C program to solve the dining philosophers problem using semaphores was executed and verified."
+    },
+    {
+      "pid": 24,
+      "title": "Process Synchronization - 03",
+      "result": "C program to simulate the address translation in the paging scheme was executed and verified."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+1. Start\\
+2. Let "start\_time" be a region of shared memory\\
+3. Invoke the "fork()" system call and store the return value into "pid"\\
+4. If "pid" is less than zero, the fork failed, goto step-7\\
+5. Else if "pid" is zero, \\
+\hspace*{1cm} 5.1. Invoke the "gettimeofday()" system call and store the current timestamp to \hspace*{2cm} "start\_time"\\
+\hspace*{1cm} 5.2. Execute the required command by invoking the "execvp()" system call\\
+6. Else,\\
+\hspace*{1cm} 6.1. Wait until the child process terminates\\
+\hspace*{1cm} 6.2. Record the current timestamp to "end\_time"\\
+\hspace*{1cm} 6.3. Compute the difference between "end\_time" and "start\_time"\\
+\hspace*{1cm} 6.4. Output the difference as the time taken to execute the given command\\
+7. Stop\\

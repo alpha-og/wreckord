@@ -1,0 +1,17 @@
+1. Start\\
+2. Prompt the user to enter the number of occurrences (N)\\
+3. Prompt the user to enter the word to search for\\
+4. Prompt the user to enter the filename\\
+5. Check if the file exists\\
+    If the file does not exist:\\
+       Display error message\\
+       Exit program\\
+6. Count the occurrences of the word in the file\\
+7. Check if the word occurs more than N times\\
+    If word count > N:\\
+       Remove all occurrences of the word from the file\\
+       Display message that all occurrences have been removed\\
+    If word count <= N:\\
+       Display message with the count and that it's not more than N\\
+8. End\\
+

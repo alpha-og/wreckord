@@ -1,0 +1,15 @@
+1. Start\\
+2. Prompt the user to enter a number\\
+3. Validate the input is a positive decimal number\\
+4. Display the menu\\
+5. Prompt the user to enter a choice \\
+6. If choice is 1 :\\
+    Convert to binary and display the result\\
+7. If choice is 2:\\
+   Convert to octal and display the result\\
+8. If choice is 3:\\
+   Convert to hexadecimal and display the result\\
+9. If choice is 4:\\
+   Display exit message\\
+10. End\\
+

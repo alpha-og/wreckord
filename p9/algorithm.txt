@@ -1,0 +1,19 @@
+1. Start\\
+2. Display menu with process information options:\\
+3. Define function to get number of processes forked since last boot:\\
+    Read value of process since last boot\\
+4. Define function to get number of processes currently in system:\\
+    Count all processes using ps command and wc\\
+5. Define function to get number of running processes:\\
+    Count processes with state 'R' using ps and grep\\
+6. Define function to get number of blocked processes:\\
+    Count processes with state 'D' using ps and grep\\
+7. Define function to get PID of current shell:\\
+    Return value of $$ variable\\
+8. Define function to get number of context switches by this shell:\\
+    Calculate sum of voluntary and involuntary context switches \\
+9. Define function to get number of forced context switches by this shell:\\
+    Read involuntary context switches \\
+10. Select the option from the menu\\
+11. Goto the appropriate function\\
+12. End\\

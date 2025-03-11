@@ -1,0 +1,2 @@
+Write a simple program to print the system date and time. Have your program also print how long it (in the strict sense, the corresponding process) ran in user and kernel modes. Next add a loop in your program that runs for a long time (some loop which simply counts up to a huge value) and then rerun the program. See how the two time values have changed.
+

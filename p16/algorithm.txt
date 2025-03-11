@@ -1,0 +1,11 @@
+1. Start\\
+2. Read input "path" from the command line\\
+3. Open a directory stream with the path, by invoking the "opendir()" system call\\
+4. Iterate through each entry in the directory stream by invoking the "readdir()" system \hspace*{0.4cm} call\\
+\hspace*{1cm} 5.1. Format the full path\\
+\hspace*{1cm} 5.2. Invoke the "stat()" system call to retrieve file status information\\
+\hspace*{1cm} 5.3. Format the access and modified time\\
+\hspace*{1cm} 5.4. Obtain the permissions by parsing the mode details from the output of "stat()"\\
+\hspace*{1cm} 5.5. Output the required information\\
+5. Close the directory stream\\
+6. Stop\\

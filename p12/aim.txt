@@ -1,0 +1,7 @@
+Input a list of processes, their CPU burst times (integral values), arrival times, and priorities. Then simulate the following scheduling algorithms on the process mix:\\
+(a) FCFS\\
+(b) SJF\\
+(c) SRTF\\
+(d) non-preemptive priority (a larger priority number implies a higher priority)\\
+(e) RR (with a quantum of 3 units).\\
+Determine which algorithm results in the minimum average waiting time (over all processes).\\

@@ -1,0 +1,11 @@
+You have a file s4csb2.txt with the following format:\\
+AdmnNo,Name,Address,PhoneNo,Email.\\
+Now create a command recedit which is to be invoked as:\\
+recedit op ID\\
+Here op is one among the operations add, search, update, delete and ID is an admission number.\\
+The command behaviour is summarized below:\\
+• raise an error if a sufficient number of arguments are not supplied.\\
+• to add a new student with the given ID, get the other pertinent details and create a new row for the student in the file s4csb1.txt. If such a student already exists, raise an error.\\
+• if the operation is search, the pertinent details should be printed if such a student exists or raise an error otherwise.\\
+• if the operation is updated, get the details and update the student record.\\
+• if the operation is delete, remove the student record.\\

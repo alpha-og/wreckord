@@ -1,0 +1,11 @@
+Create a menu driven script to print the following processor information using the proc file system:\\
+(a) vendor (manufacturer) id\\
+(b) model name\\
+(c) processor generation\\
+(d) number of processor chips\\
+(e) number of processor cores\\
+(f) is your processor hyperthreaded?\\
+(g) number of logical processors\\
+(h) id of the core to which each logical processor is mapped\\
+(i) speed of each logical processor\\
+(j) cache size\\

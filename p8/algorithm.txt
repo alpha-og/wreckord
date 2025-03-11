@@ -1,0 +1,37 @@
+1. Start\\
+2. Define file name as "s4csb2.txt"\\
+3. Check if the number of arguments is not equal to 2\\
+    If true:\\
+       Display error message\\
+       Display usage information\\
+       Exit program with error code 1\\
+4. Set operation to first argument\\
+5. Set student ID to second argument\\
+6. Define function to check if student exists in file\\
+7. Based on the operation value:\\
+    If operation is "add":\\
+       Check if student exists\\
+          If true: Display "Exists" message\\
+          If false:\\
+             Prompt for details\\
+             Append student record to file\\
+             Display success message\\
+    If operation is "search":\\
+       Check if student exists\\
+          If true: Display the student record\\
+          If false: Display "not present" message\\
+    If operation is "update":\\
+       Check if student exists\\
+          If true:\\
+             Prompt for new details\\
+             Replace existing record with updated information\\
+             Display success message\\
+          If false: Display error message\\
+    If operation is "delete":\\\\
+       Check if student exists\\
+          If true:\\
+             Remove student record from file\\
+             Display success message\\
+          If false: Display error message\\
+8. End\\
+

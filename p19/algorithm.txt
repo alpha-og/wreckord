@@ -1,0 +1,9 @@
+1. Start\\
+2. Let the number of arguments passed to the program be $N$ and the argument list be \hspace*{0.4cm} $nums$\\
+3. Define variables "mean", "median" and "sd" (standard deviation)\\
+4. Define function "parseInput" to parse the string arguments into floating point values\\
+5. Define function "calcMean", "calcMedian" and "calcSd"\\
+6. Create threads for each of the functions\\
+7. Join the threads and store the value returned by the functions to the respective \hspace*{0.6cm} variables\\
+8. Output the results\\
+9. Stop\\

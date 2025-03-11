@@ -1,0 +1,1 @@
+Implement a menu driven scientific calculator. You should consider arithmetic operators, sin, cos, tan, power, and square root.

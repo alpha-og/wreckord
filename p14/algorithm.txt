@@ -1,0 +1,7 @@
+1. Start\\
+2. Store a randomly generated page reference string into "page\_ref\_strings"\\
+3. Implement\\
+\hspace*{1cm} 3.1. FIFO algorithm using a queue\\
+\hspace*{1cm} 3.2. LRU algorithm using a stack\\
+\hspace*{1cm} 3.3. LFU algorithm using a queue\\
+4. Stop\\

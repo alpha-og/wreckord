@@ -1,0 +1,5 @@
+Create a menu driven script to print the following memory information using the proc file system:\\
+(a) total memory in the system\\
+(b) amount of memory left unused\\
+(c) amount of memory available\\
+(d) amount of memory used as cache\\

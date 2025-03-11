@@ -1,0 +1,14 @@
+1. Start\\
+2. Read number of elements, "n"\\
+3. Read the elements of the array, "arr"\\
+4. Invoke the "fork()" system call and store the return value into "pid1"\\
+5. If "pid1" is less than zero, goto step-8\\
+6. Else if "pid1" is zero, loop through elements of "arr" and output the odd elements\\
+7. Else,\\
+\hspace*{1cm} 7.1. Invoke the "waitpid()" system call to wait until child process terminates\\
+\hspace*{1cm} 7.2. Invoke the "fork()" system call and store the return value into "pid2"\\
+\hspace*{1cm} 7.3. If "pid2" is less than zero goto step-8\\
+\hspace*{1cm} 7.4. Else if "pid2" is zero, loop through elements of "arr" and output the even \hspace*{2cm} elements\\
+\hspace*{1cm} 7.5. Else, invoke the "waitpid()" system call to wait until the child process \hspace*{2cm} terminates\\
+8. Stop\\
+

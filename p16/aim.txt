@@ -1,0 +1,8 @@
+Create a command listdir that works like the ls command and will be invoked as listdir\\
+path where path is the path of some directory in your system. The output should be a list of\\
+files and directories in that path along with the following information for each file or directory:\\
+• file permissions and file-type information\\
+• the user identity of the file owner\\
+• the time of last access\\
+• the time of last modification to contents.\\
+You may have to use system calls like "opendir()", "readdir()", "stat()" etc.\\

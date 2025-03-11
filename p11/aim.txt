@@ -1,0 +1,2 @@
+Fork two processes. The parent process inputs an integer array. One child prints all the even numbers in the array and the other prints all the odd numbers. Use "waitpid()" system call to ensure that all odd numbers are printed first followed by the even numbers.
+

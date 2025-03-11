@@ -1,0 +1,7 @@
+1. Start\\
+2. Display the menu.\\
+3. Get the option as user input.\\
+4. Based on the user's choice, fetch and display the required information from '/proc/meminfo' file.\\
+5. Loop until the user selects the exit option.\\
+6. End\\
+

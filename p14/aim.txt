@@ -1,0 +1,6 @@
+Simulate the\\
+a)FIFO\\
+b)LRU\\
+c) LFU\\
+as follows: \\
+First, generate a random page-reference string where page numbers range from 0 to 9. Apply the random page-reference string to each algorithm, and record the number of page faults incurred by each algorithm. Assume that demand paging is used.\\

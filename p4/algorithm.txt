@@ -1,0 +1,12 @@
+1. Start\\
+2. Display Menu\\
+3. Get user input - the operation to be performed.\\
+4. For operations - Add, Subtract, Multiply and Divide- read two operands from the user.\\
+5. For operation "Square" - get the number to be squared the user.\\
+6. For operation "Exponentiation" - read the base, exponent pair from the user.\\
+7. For trigonometric operations read the angle in degrees as input and convert and store the value in  radians.\\
+8. Use the read inputs and compute the required results using 'bc -l'.\\
+9. Print the result.\\
+10. Loop the menu until the 'exit' condition is met.\\
+11. End\\
+

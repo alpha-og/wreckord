@@ -1,0 +1,6 @@
+Simulate the disk-scheduling algorithms as follows:\\
+a) FCFS\\
+b) SCAN\\
+c) LOOK\\
+d) CSCAN\\
+Your program will service a disk with 5,000 cylinders numbered 0 to 4,999. The program will generate a random series of 10 cylinder requests and service them according to each of the algorithms listed earlier. The program should be invoked with the initial position of the disk head and the last request served as command line arguments and should report the total number of head movements required by each algorithm.\\

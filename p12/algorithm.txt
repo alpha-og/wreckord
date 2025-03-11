@@ -1,0 +1,12 @@
+1. Start\\
+2. Input the process list, reading all relevant properties such as burst time, arrival time \hspace*{0.4cm} and priorities\\
+3. Implement simulations that calculate the average wait time for,\\
+\hspace*{1cm} 2.1. FCFS\\
+\hspace*{1cm} 2.2. SJF\\
+\hspace*{1cm} 2.3. SRTF\\
+\hspace*{1cm} 2.4. Non Preemptive Priority\\
+\hspace*{1cm} 2.5. Round Robin\\
+4. Run the simulations on the process list\\
+5. Compare the average wait time of each algorithm and output the one having minimum \hspace*{0.4cm} average waiting time\\
+6. Stop
+

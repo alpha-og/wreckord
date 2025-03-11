@@ -1,0 +1,13 @@
+1. Start\\
+2. Let "ta" be a binary semaphore indicating the availability of the TA\\
+3. Let "chairs" be a counting semaphore indicating the number of vacant chairs\\
+4. Let "students" be an array that stores the thread identifiers for each thread\\
+5. At random intervals, create a thread representing a student\\
+\hspace*{1cm} 5.1. Check if the TA is available\\
+\hspace*{1cm} 5.2. If the TA is available, acquire the semaphore for the period the TA is helping \hspace*{2cm} the student and goto step-5.6\\
+\hspace*{1cm} 5.3. Else check if chairs are available\\
+\hspace*{1cm} 5.4. If chairs are available, acquire a chair from the "chairs" semaphore by \hspace*{2cm} decrementing it,  wait until the TA is available, release the chair and goto \hspace*{2cm} step-5.2\\
+\hspace*{1cm} 5.5. Else, wait for some time and goto step 5.1\\
+\hspace*{1cm} 5.6. Release the "ta" semaphore\\
+6. Execute all the threads concurrently and join the threads\\
+7. Stop\\

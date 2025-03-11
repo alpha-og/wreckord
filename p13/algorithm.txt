@@ -1,0 +1,17 @@
+1. Start\\
+2. Read the "available" vector\\
+3. Read the number of processes, "np" and number of distinct resource types, "nr"\\
+4. Read the "allocated" and "max" matrices for each process from the user\\
+5. Compute the "need" matrix subtracting the allocation from the max\\
+6. Initialize vector "completed" (having as many elements as the number of processes) \hspace*{0.4cm} to false\\
+7. Initialize vector "work" (having as many elements as the number of distinct resource \hspace*{0.4cm} types) to available\\
+8. Initialize vector "sequence" (having as many elements as the number of processes) to \hspace*{0.4cm} store the safe sequence\\
+9. Search "completed" for an element whose value is false having need less than work\\
+10. If no such element exists, goto step-14\\
+11. Add the "allocated" vector of the process to the "work" vector\\
+12. Update the completed flag of the process to true\\
+13. Append the process id/ name into "sequence" and goto step-9\\
+14. If all entries of the "completed" vector are true, system is in safe state, goto step-16\\
+15. Else, system is in unsafe state, goto step-17 \\
+16. Output the safe sequence\\
+17. Stop\\

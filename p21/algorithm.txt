@@ -1,0 +1,17 @@
+1. Start\\
+2. In myadder.c,\\
+\hspace*{1cm} 2.1. Let "a" and "b" be two integers\\
+\hspace*{1cm} 2.2. Read two integers from command line and store to "a" and "b"\\
+\hspace*{1cm} 2.3. Add "a" and "b" and print the result\\
+\hspace*{1cm} 2.4. Return\\
+3. Compile myadder.c to an executable myadder\\
+4. In main.c,\\
+\hspace*{1cm} 4.1. Let "a" and "b" be two integers\\
+\hspace*{1cm} 4.2. Read two integers as input and store to "a" and "b"\\
+\hspace*{1cm} 4.3. Use the "fork()" system call to create a child process and store the returned  \hspace*{2cm}value to "pid"\\
+\hspace*{1cm} 4.4. If "pid" is less than zero, fork has failed, goto step-4.8\\
+\hspace*{1cm} 4.5. If "pid" is greater than zero, current process is the parent, use the "wait()" \hspace*{2cm} system call to wait until the child terminates and goto step-4.8\\
+\hspace*{1cm} 4.6. Else current process is the child, goto step-4.7\\
+\hspace*{1cm} 4.7. Use the "execvp()" system call by passing "myadder" as the program name \hspace*{2cm} and "a" and "b" as its arguments\\
+\hspace*{1cm} 4.8. Return\\
+5. Stop\\

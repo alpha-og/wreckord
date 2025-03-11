@@ -1,0 +1,1 @@
+Write a program to add two integers (received via command line) and compile it to an executable myadder. Now write another program that forks a new process. Make the child process add two integers by replacing its image with the myadder image using execvp() system call.

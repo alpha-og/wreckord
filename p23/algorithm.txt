@@ -1,0 +1,12 @@
+1. Start\\
+2. Let the number of philosophers be 5 and the number of chopsticks be 5\\
+3. Let "chopsticks" be an array of size 5 having 5 distinct semaphores for each chopstick\\
+4. Let "philosophers" be an array of size 5 to store the thread identifiers of each thread\\
+5. Create threads for each philosopher,\\
+\hspace*{1cm} 5.1. Wait for $i^{th}$ and ${i+1}^{th}$ chopstick to be available\\
+\hspace*{1cm} 5.2. If required chopsticks are available, acquire the chopsticks and "eat", and goto \hspace*{2cm} step-5.4\\
+\hspace*{1cm} 5.3. Else goto step-5.1\\
+\hspace*{1cm} 5.4. Release the chopsticks\\
+\hspace*{1cm} 5.5. Return\\
+6. Execute all the threads concurrently and join the threads\\
+7. Stop

@@ -1,0 +1,11 @@
+1. Start\\
+2. Invoke the "fork()" system call and store the return value into "pid"\\
+3. If pid is less than zero, goto step-6\\
+4. Else if pid is zero,\\
+\hspace*{1cm} 4.1. Invoke the "getpid()" system call and output the pid of the current process \hspace*{2cm} (child pid)\\
+\hspace*{1cm} 4.2. Invoke the "getppid()" system call and output the pid of the parent process \hspace*{2cm}  (parent pid) \\
+5. Else,\\
+\hspace*{1cm} 5.1. Output "pid" (child pid)\\
+\hspace*{1cm} 5.2. Invoke the "getpid()" system call and output pid of the current process (parent \hspace*{2cm} pid)\\
+6. Execute the command "pstree -p $|$ grep $<childId>$" in the command line\\
+7. Stop\\
