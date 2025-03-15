@@ -78,7 +78,7 @@ jq -c '.experiments[]' "$JSON_FILE" | while read -r experiment; do
 
 	# Generate algorithm
 	algorithm="$(cat "$directory/algorithm.txt")"
-	if [[ "$pid" -ge 1 && "$pid" -le 10 ]]; then
+	if [[ "$pid" -ge 1 && "$pid" -le 9 ]]; then
 		ft="sh"
 	else
 		ft="c"
