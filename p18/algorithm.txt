@@ -4,5 +4,5 @@
 4. Invoke the "getrusage()" system call to retrieve resource usage information and store \hspace*{0.4cm} it into "usage"\\
 5. Display the values of time spent by the program in user mode and kernel mode \hspace*{1cm}  respectively\\
 6. Execute a long running loop that counts upto a large value\\
-7. Repeat steps 4 & 5\\
+7. Repeat steps 4 \& 5\\
 8. Stop\\

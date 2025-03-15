@@ -1,35 +1,35 @@
 1. Start\\
 2. Store a randomly generated page reference string into "page\_ref\_strings"\\
 3. Simulate FIFO\\
-    3.1. Initialize the "frames" array (circular queue)\\
-    3.2. Let "page\_faults" be 0 and "rear" be 0\\
-    3.2. Repeat the steps-3.3-3.4 for each page reference until the "page\_ref\_strings" array is exhausted\\
-    3.3. Search the frames array for the current page reference\\
-    3.4. if the page reference is not found, enqueue it to the "frames" array by overwriting $rear+i % FRAME_SIZE ^th$ element and increment the page fault count
-    3.5 Output the page fault count
+\hspace*{1cm} 3.1. Initialize the "frames" array (circular queue)\\
+\hspace*{1cm} 3.2. Let "page\_faults" be 0 and "rear" be 0\\
+\hspace*{1cm} 3.2. Repeat the steps-3.3-3.4 for each page reference until the "page\_ref\_strings" \hspace*{2cm} array is exhausted\\
+\hspace*{1cm} 3.3. Search the frames array for the current page reference\\
+\hspace*{1cm} 3.4. if the page reference is not found, enqueue it to the "frames" array by \hspace*{2cm} overwriting $(rear+i\ \%\ \text{FRAME\_SIZE})^{th}$ element and increment the page \hspace*{2cm} fault count\\
+\hspace*{1cm} 3.5 Output the page fault count\\
 4. Simulate LRU\\
-    4.1. Initialize the "frames" array (stack)\\
-    4.2. Let "page\_faults" be 0 and "top" be -1\\
-    4.3. Repeat the steps-4.4-4.9 for each page reference until the "page\_ref\_strings" array is exhausted\\
-    4.4. Search the frames array for the current page reference\\
-    4.5. if the page reference is found goto step-4.9\\
-    4.6. if the frames array is full, shift each frame by one (away from the top)\\
-    4.7. push new page to the top\\
-    4.8. increment the page fault count\\
-    4.9. move the current page reference to the top of the frames stack by swapping elements one by one\\
-    4.10. Output the page fault count
+\hspace*{1cm} 4.1. Initialize the "frames" array (stack)\\
+\hspace*{1cm} 4.2. Let "page\_faults" be 0 and "top" be -1\\
+\hspace*{1cm} 4.3. Repeat the steps-4.4-4.9 for each page reference until the "page\_ref\_strings" \hspace*{2cm} array is exhausted\\
+\hspace*{1cm} 4.4. Search the frames array for the current page reference\\
+\hspace*{1cm} 4.5. if the page reference is found goto step-4.9\\
+\hspace*{1cm} 4.6. if the frames array is full, shift each frame by one (away from the top)\\
+\hspace*{1cm} 4.7. push new page to the top\\
+\hspace*{1cm} 4.8. increment the page fault count\\
+\hspace*{1cm} 4.9. move the current page reference to the top of the frames stack by swapping \hspace*{2cm} elements one by one\\
+\hspace*{1cm} 4.10. Output the page fault count
 5. Simulate LFU\\
-    5.1. Initialize the "frames" array (queue)\\
-    5.2. Initialize the "page\_usage" array to track the usage of each page\\
-    5.3. Let "page\_faults" be 0 and "rear" be -1\\
-    5.4. Repeat the steps-5.5-5.11 for each page reference until the "page\_ref\_strings" array is exhausted\\
-    5.5. Search the frames array for the current page reference\\
-    5.6. if the page reference is found goto step-5.\\
-    5.7. if the frames array is not full, goto step-5.9\\
-    5.8. find the least used page and replace it with current page, goto step 5.11
-    5.9. enqueue the current page reference to the frames queue 
-    5.10. increment the page usage of the current page reference by 1\\
-    5.11. increment the page fault count\\
-    5.12. Output the page fault count
+\hspace*{1cm} 5.1. Initialize the "frames" array (queue)\\
+\hspace*{1cm} 5.2. Initialize the "page\_usage" array to track the usage of each page\\
+\hspace*{1cm} 5.3. Let "page\_faults" be 0 and "rear" be -1\\
+\hspace*{1cm} 5.4. Repeat the steps-5.5-5.11 for each page reference until the "page\_ref\_strings" \hspace*{2cm} array is exhausted\\
+\hspace*{1cm} 5.5. Search the frames array for the current page reference\\
+\hspace*{1cm} 5.6. if the page reference is found goto step-5.\\
+\hspace*{1cm} 5.7. if the frames array is not full, goto step-5.9\\
+\hspace*{1cm} 5.8. find the least used page and replace it with current page, goto step 5.11\\
+\hspace*{1cm} 5.9. enqueue the current page reference to the frames queue \\
+\hspace*{1cm} 5.10. increment the page usage of the current page reference by 1\\
+\hspace*{1cm} 5.11. increment the page fault count\\
+\hspace*{1cm} 5.12. Output the page fault count\\
 6. Execute the simulation on the random page reference string\\
-7. Stop
+7. Stop\\

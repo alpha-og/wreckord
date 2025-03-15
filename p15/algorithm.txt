@@ -1,24 +1,24 @@
 1. Start\\
-2. Initialization memory,\\
-   2.1. Define necessary constants and structures for partitions.\\
-   2.2. Initialize an array of partitions with fixed sizes and allocation status.\\
-   2.3. Print the partition details.\\
+2. Initialize memory,\\
+\hspace*{1cm} 2.1. Define necessary constants and structures for partitions.\\
+\hspace*{1cm} 2.2. Initialize an array of partitions with fixed sizes and allocation status.\\
+\hspace*{1cm} 2.3. Print the partition details.\\
 3. Define function to display partitions\\
-   3.1. Iterate through the partition array and print each partition’s size and allocation status.\\\\
+\hspace*{1cm} 3.1. Iterate through the partition array and print each partition’s size and allocation status.\\
 4. Define function for First Fit Allocation,\\
-   4.1. Iterate through the partition array.\\
-   4.2. If a partition has enough size and is not allocated, allocate it and return its index.\\
-   4.3. If no suitable partition is found, return -1.\\
+\hspace*{1cm} 4.1. Iterate through the partition array.\\
+\hspace*{1cm} 4.2. If a partition has enough size and is not allocated, allocate it and return its \hspace*{2cm} index.\\
+\hspace*{1cm} 4.3. If no suitable partition is found, return -1.\\
 5. Define function for Worst Fit Allocation,\\
-   5.1. Initialize variables to store the index of the partition with the largest size (index) and its size (max_size). \\
-   5.2. Iterate through the partition array.\\
-   5.3. If a partition has enough size and is not allocated and its size is larger than max_size, update index and max_size.\\
-   5.4. If a suitable partition is found, allocate it, update its allocation status, and return its index.\\
-   5.5. If no suitable partition is found, return -1.\\
+\hspace*{1cm} 5.1. Initialize variables to store the index of the partition with the largest size \hspace*{2cm} (index) and its size (max\_size). \\
+\hspace*{1cm} 5.2. Iterate through the partition array.\\
+\hspace*{1cm} 5.3. If a partition has enough size and is not allocated and its size is larger than \hspace*{2cm} max\_size, update index and max\_size.\\
+\hspace*{1cm} 5.4. If a suitable partition is found, allocate it, update its allocation status, and \hspace*{2cm} return its index.\\
+\hspace*{1cm} 5.5. If no suitable partition is found, return -1.\\
 6. Define function for Best Fit Allocation,\\
-   6.1. Initialize variables to store the index of the partition with the smallest sufficient size (index) and its size (min_size).\\
-   6.2. Iterate through the partition array.\\
-   6.3. If a partition has enough size and is not allocated and its size is smaller than min_size, update index and min_size.\\
-   6.4. If a suitable partition is found, allocate it, update its allocation status, and return its index.\\
-   6.5. If no suitable partition is found, return -1.\\
+\hspace*{1cm} 6.1. Initialize variables to store the index of the partition with the smallest \hspace*{2cm} sufficient size (index) and its size (min\_size).\\
+\hspace*{1cm} 6.2. Iterate through the partition array.\\
+\hspace*{1cm} 6.3. If a partition has enough size and is not allocated and its size is smaller than \hspace*{2cm} min\_size, update index and min\_size.\\
+\hspace*{1cm} 6.4. If a suitable partition is found, allocate it, update its allocation status, and \hspace*{2cm} return its index.\\
+\hspace*{1cm} 6.5. If no suitable partition is found, return -1.\\
 7. Stop\\
