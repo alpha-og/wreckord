@@ -9,7 +9,7 @@
 6. Define function to get number of blocked processes:\\
     Count processes with state 'D' using ps and grep\\
 7. Define function to get PID of current shell:\\
-    Return value of $$ variable\\
+    Return value of \$\$ variable\\
 8. Define function to get number of context switches by this shell:\\
     Calculate sum of voluntary and involuntary context switches \\
 9. Define function to get number of forced context switches by this shell:\\
