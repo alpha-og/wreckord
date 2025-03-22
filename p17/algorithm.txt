@@ -1,0 +1,40 @@
+1. Start\\
+2. Read arguments (initial position and last served request) from command line\\
+3. Validate the arguments to ensure that they are within the correct range\\
+4. Generate a random list of cylinder request\\
+5. Define a function to simulate head movement and track the head movement count\\
+\hspace*{1cm} . Define a function to simulate the FCFS algorithm  \\
+\hspace*{1cm} 6.1. Start from the initial head position.  \\
+\hspace*{1cm} 6.2. Iterate through the list of cylinder requests in the given order.  \\
+\hspace*{1cm} 6.3. Move the head to each requested cylinder.  \\
+\hspace*{1cm} 6.4. Track the total head movement count.  \\
+\hspace*{1cm} 6.5. Display the total head movement count after servicing all requests.  \\
+7. Define a function to simulate the SCAN algorithm  \\
+\hspace*{1cm} 7.1. Sort the cylinder requests in ascending order.  \\
+\hspace*{1cm} 7.2. Identify the initial direction of head movement.  \\
+\hspace*{1cm} 7.3. Move the head in the given direction, servicing requests along the way.  \\
+\hspace*{1cm} 7.4. Stop when reaching the extreme cylinder in that direction.  \\
+\hspace*{1cm} 7.5. Reverse the direction.  \\
+\hspace*{1cm} 7.6. Continue servicing the remaining requests in the opposite direction.  \\
+\hspace*{1cm} 7.7. Display the total head movement count after servicing all requests.  \\ 
+8. Define a function to simulate the LOOK algorithm  \\
+\hspace*{1cm} 8.1. Sort the cylinder requests in ascending order.  \\
+\hspace*{1cm} 8.2. Identify the initial direction of head movement.  \\
+\hspace*{1cm} 8.3. Move the head in the given direction, servicing requests until reaching the last request in that direction.  \\
+\hspace*{1cm} 8.4. Reverse the direction.  \\
+\hspace*{1cm} 8.5. Continue servicing the remaining requests in the opposite direction.  \\
+\hspace*{1cm} 8.6. Display the total head movement count after servicing all requests.  \\ 
+9. Define a function to simulate the C-SCAN algorithm  \\
+\hspace*{1cm} 9.1. Sort the cylinder requests in ascending order.  \\
+\hspace*{1cm} 9.2. Identify the initial direction of head movement.  \\
+\hspace*{1cm} 9.3. Move the head in the given direction, servicing requests along the way.  \\
+\hspace*{1cm} 9.4. Stop when reaching the extreme cylinder in that direction.  \\
+\hspace*{1cm} 9.5. Jump to the extreme cylinder on the opposite side without servicing requests.  \\
+\hspace*{1cm} 9.6. Continue servicing requests in the same direction.  \\
+\hspace*{1cm} 9.7. Display the total head movement count after servicing all requests.  \\
+10. Run the simulation for FCFS\\
+11. Sort the cylinder requests in ascending order\\
+12. Run the simulation for SCAN\\
+13. Run the simulation for LOOK\\
+14. Run the simulation for CSCAN\\
+15. Stop\\
