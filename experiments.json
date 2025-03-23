@@ -88,7 +88,7 @@
     },
     {
       "pid": 19,
-      "title": "Multithreaded Calculation of Measures of Central Tendencies",
+      "title": "\\parbox{\\textwidth}{\\centering Multithreaded Calculation of Measures of Central Tendency}",
       "result": "C program to calculate the mean, median, and standard deviation for a list of integers in different threads was executed and verified."
     },
     {
@@ -103,12 +103,12 @@
     },
     {
       "pid": 22,
-      "title": "Process Synchronization to Solve TA Problem Using Semaphores",
+      "title": "\\parbox{\\textwidth}{\\centering Process Synchronization to Solve TA Problem Using Semaphores}",
       "result": "C program to solve the TA problem was executed and verified."
     },
     {
       "pid": 23,
-      "title": "Process Synchronization to Solve Dining Philosophers Problem Using Semaphores",
+      "title": "\\parbox{\\textwidth}{\\centering Process Synchronization to Solve Dining Philosophers Problem Using Semaphores}",
       "result": "C program to solve the dining philosophers problem using semaphores was executed and verified."
     },
     {
