@@ -37,11 +37,19 @@ if [ ! -d "$OUTPUT_DIR" ]; then
 	mkdir "$OUTPUT_DIR"
 else
 	echo "Output directory '$OUTPUT_DIR' already exists."
-	echo "Would you like to clear the cache and regenerate all documents? (y/n)"
+	echo "Would you like to clear the cache and regenerate all documents? (y/N)"
 	read -r clear_cache
-	if [ "$clear_cache" = "y" ]; then
+	if [ -z "$clear_cache" ]; then
+		clear_cache="N"
+	fi
+
+	if [ "$clear_cache" = "y" ] || [ "$clear_cache" = "Y" ]; then
 		echo "Clearing cache..."
 		rm -rf "$OUTPUT_DIR"
+		mkdir -p "$OUTPUT_DIR"
+	else
+		echo "Aborting"
+		exit 1
 	fi
 fi
 
@@ -51,11 +59,90 @@ if [ ! -f "$JSON_FILE" ]; then
 	exit 1
 fi
 
+titles_file="./out/titles.txt"
+aims_file="./out/aims.txt"
+algorithms_file="./out/algorithms.txt"
+results_file="./out/results.txt"
+
+if [ -f "$titles_file" ]; then
+	echo "File $titles_file already exists"
+	echo "Would you like to overwrite it? [Y/n]"
+	read -r answer
+	if [ -z "$answer" ]; then
+		answer="Y"
+	fi
+	if [ "$answer" != "Y" ] && [ "$answer" != "y" ]; then
+		echo "Aborting"
+	else
+		echo "Overwriting $titles_file"
+		echo "" >"$titles_file"
+	fi
+else
+	echo "Creating $titles_file"
+	touch "$titles_file"
+fi
+
+if [ -f "$aims_file" ]; then
+	echo "File $aims_file already exists"
+	echo "Would you like to overwrite it? [Y/n]"
+	read -r answer
+	if [ -z "$answer" ]; then
+		answer="Y"
+	fi
+	if [ "$answer" != "Y" ] && [ "$answer" != "y" ]; then
+		echo "Aborting"
+	else
+		echo "Overwriting $aims_file"
+		echo "" >"$aims_file"
+	fi
+else
+	echo "Creating $aims_file"
+	touch "$aims_file"
+fi
+
+if [ -f "$algorithms_file" ]; then
+	echo "File $algorithms_file already exists"
+	echo "Would you like to overwrite it? [Y/n]"
+	read -r answer
+	if [ -z "$answer" ]; then
+		answer="Y"
+	fi
+
+	if [ "$answer" != "Y" ] && [ "$answer" != "y" ]; then
+		echo "Aborting"
+	else
+		echo "Overwriting $algorithms_file"
+		echo "" >"$algorithms_file"
+	fi
+else
+	echo "Creating $algorithms_file"
+	touch "$algorithms_file"
+fi
+
+if [ -f "$results_file" ]; then
+	echo "File $results_file already exists"
+	echo "Would you like to overwrite it? [Y/n]"
+	read -r answer
+	if [ -z "$answer" ]; then
+		answer="Y"
+	fi
+
+	if [ "$answer" != "Y" ] && [ "$answer" != "y" ]; then
+		echo "Aborting"
+	else
+		echo "Overwriting $results_file"
+		echo "" >"$results_file"
+	fi
+else
+	echo "Creating $results_file"
+	touch "$results_file"
+fi
+
 # output merged algorithms
-./merge.sh ./out/algorithms.txt p*/algorithm.txt
+sh ./merge.sh "$algorithms_file" p{2..24}/algorithm.txt
 
 # output merged aims
-./merge.sh ./out/aims.txt p*/aim.txt
+sh ./merge.sh "$aims_file" p{2..24}/aim.txt
 
 # Loop through each experiment in the JSON file
 jq -c '.experiments[]' "$JSON_FILE" | while read -r experiment; do
@@ -65,6 +152,8 @@ jq -c '.experiments[]' "$JSON_FILE" | while read -r experiment; do
 	# aim=$(echo "$experiment" | jq -r '.aim')
 	# algorithm=$(echo "$experiment" | jq -r '.algorithm')
 	result=$(echo "$experiment" | jq -r '.result')
+	echo "$pid. $title" >>"$titles_file"
+	echo "$pid. $result" >>"$results_file"
 
 	echo "Generating page for experiment $title (problem $pid)..."
 	directory="p$pid"
