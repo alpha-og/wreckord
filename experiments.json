@@ -43,77 +43,77 @@
 
     {
       "pid": 10,
-      "title": "Process Management - 01",
+      "title": "Process Management System Calls - 01",
       "result": "C program demonstrating the use of fork system call was executed and verified."
     },
     {
       "pid": 11,
-      "title": "Process Management - 02",
+      "title": "Process Management System Calls - 02",
       "result": "C program to display odd and even numbers from input using processes was executed and verified."
     },
     {
       "pid": 12,
-      "title": "Process Scheduling - 01",
+      "title": "CPU Scheduling Algorithms",
       "result": "C program simulating various scheduling algorithms on a process mix was executed and verified."
     },
     {
       "pid": 13,
-      "title": "Deadlock Handling - 01",
+      "title": "Banker's Algorithm",
       "result": "C program simulating banker's algorithm on a process mix was executed and verified."
     },
     {
       "pid": 14,
-      "title": "Memory Management - 01",
+      "title": "Page Replacement Algorithms",
       "result": "C program simulating various paging algorithms was executed and verified."
     },
     {
       "pid": 15,
-      "title": "Memory Management - 02",
-      "result": "C program to determine the best performing memory allocation algorithm was executed and verified."
+      "title": "Memory Allocation Methods",
+      "result": "C program to implement memory allocation methods was executed and verified."
     },
     {
       "pid": 16,
-      "title": "File Management - 01",
+      "title": "Familiarization of I/O System Calls",
       "result": "C program to list files and directories in a given path was executed and verified."
     },
     {
       "pid": 17,
-      "title": "Disk Management - 01",
+      "title": "Disk Scheduling Algorithms",
       "result": "C program to simulate various disk-scheduling algorithms was executed and verified."
     },
     {
       "pid": 18,
-      "title": "Disk Management - 02",
+      "title": "Resource Usage System Calls",
       "result": "C program to display the system date and time as well as time spent by the process in user and kernel mode was executed and verified."
     },
     {
       "pid": 19,
-      "title": "Multithreading - 01",
+      "title": "Multithreaded Calculation of Measures of Central Tendencies",
       "result": "C program to calculate the mean, median, and standard deviation for a list of integers in different threads was executed and verified."
     },
     {
       "pid": 20,
-      "title": "Multithreading - 02",
+      "title": "IPC Using Shared Memory",
       "result": "C program to determine time taken by a process to execute a given command was executed and verified."
     },
     {
       "pid": 21,
-      "title": "Multithreading - 03",
+      "title": "Multiprocessing System Calls",
       "result": "C program to demonstrate the use of execvp system call was executed and verified."
     },
     {
       "pid": 22,
-      "title": "Process Synchronization - 01",
+      "title": "Process Synchronization to Solve TA Problem Using Semaphores",
       "result": "C program to solve the TA problem was executed and verified."
     },
     {
       "pid": 23,
-      "title": "Process Synchronization - 02",
+      "title": "Process Synchronization to Solve Dining Philosophers Problem Using Semaphores",
       "result": "C program to solve the dining philosophers problem using semaphores was executed and verified."
     },
     {
       "pid": 24,
-      "title": "Process Synchronization - 03",
+      "title": "Address Translation",
       "result": "C program to simulate the address translation in the paging scheme was executed and verified."
     }
   ]
