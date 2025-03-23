@@ -1,63 +1,55 @@
 1. Start\\
-2. Define "fcfs" to simulate FCFS\\
-    2.1. let "current\_time" and "total\_waiting" be 0\\
-    2.2. repeat steps-2.3-2.7 for each process until end of process list\\
-    2.3. compute the completion time based on current time, arrival time and burst time of the process
-    2.4. compute the turnaround time based on completion time and arrival time of the process
-    2.5. compute the waiting time based on turnaround time and burst time of the process
-    2.6. add the waiting time to "total\_waiting"
-    2.7. update "current\_time" to the completion time of the process
-    2.8. output the average waiting time\\
-3. Define "sjf" to simulate SJF\\
-    3.1. let "completed", "total\_waiting" and "current\_time" be 0\\
-    3.2. let "is\_completed" be an array used to track the completion status of each process
-    3.3. repeat steps-3.4-3.10 until all processes are completed\\
-    3.4. find a process from the process list which hasnt been completed having least burst time which arrived at a time before current time
-    3.5. compute the completion time based on current time and burst time of the process
-    3.6. compute the turnaround time based on completion time and arrival time of the process
-    3.7. compute the waiting time based on turnaround time and burst time of the process
-    3.8. add the waiting time to "total\_waiting"
-    3.9. mark the process as completed
-    3.10. update "current\_time" to the completion time of the process
-    3.11. output the average waiting time\\
-4. Define "priority\_scheduling" to simulate Priority Scheduling\\
-    4.1. let "completed", "total\_waiting" and "current\_time" be 0\\
-    4.2. let "is\_completed" be an array used to track the completion status of each process
-    4.3. repeat steps-4.4-4.10 until all processes are completed\\
-    4.4. find a process from the process list which hasnt been completed having highest priority which arrived at a time before current time
-    4.5. compute the completion time based on current time and burst time of the process
-    4.6. compute the turnaround time based on completion time and arrival time of the process
-    4.7. compute the waiting time based on turnaround time and burst time of the process
-    4.8. add the waiting time to "total\_waiting"
-    4.9. mark the process as completed
-    4.10. update "current\_time" to the completion time of the process
-    4.11. output the average waiting time\\
-5. Define "round\_robin" to simulate Round Robin Scheduling\\
-    5.1. let "current\_time", "completed" and "total\_waiting" be 0\\
-    5.2. let "remaining\_time" be an array used to track the remaining burst time of each process
-    5.3. repeat steps-5.4-5.9 until all processes are completed\\
-    5.4. find a process from the process list having remaining burst time greater than 0
-    5.5. compute the execution time based on remaining burst time of the process
-    5.6. increment the current time by the execution time
-    5.7. decrement the remaining burst time of the process by the execution time
-    5.8. if the remaining burst time of the process is 0, mark the process as completed, compute the turnaround and waiting time
-    5.9. update total waiting time by the waiting time of the process
-    5.10. output the average waiting time\\
-6. Define "srtf" to simulate SRTF Scheduling\\
-    6.1. let "current\_time", "completed" and "total\_waiting" be 0\\
-    6.2. let "remaining\_time" be an array used to track the remaining burst time of each process
-    6.3. repeat steps-6.4-6.9 until all processes are completed\\
-    6.4. find a process from the process list having remaining burst time greater than 0 such that its remaining time is least among all processes, which arrived at a time before current time
-    6.5. decrement the remaining burst time of the process by 1
-    6.6. increment the current time by 1
-    6.7. if the remaining burst time of the process is 0, mark the process as completed, compute the turnaround and waiting time
-    6.8. update total waiting time by the waiting time of the process
-    6.9. output the average waiting time\\
-7. Read the number of processes, $n$\\
-8. Read the process list\\
-    8.1 Read the process ID, Arrival Time, Burst Time, Priority\\
-    8.2 Repeat step 3.1 for $n$ times\\
-9. Sort the process list by arrival time\\
-10. Obtain the average waiting time for each scheduling algorithm by calling the corresponding function
-11. Output the best scheduling algorithm with the average waiting time
-12. Stop
+2. Define function for FCFS scheduling\\
+\hspace*{1cm} 2.1. Initialize "current\_time" and "total\_waiting" to 0\\
+\hspace*{1cm} 2.2. For each process, repeat steps 2.3-2.6 until end of process list\\
+\hspace*{1cm} 2.3. Compute completion time\\
+\hspace*{1cm} 2.4. Compute turnaround time\\
+\hspace*{1cm} 2.5. Compute waiting time and add to "total\_waiting"\\
+\hspace*{1cm} 2.6. Update "current\_time"\\
+\hspace*{1cm} 2.7. Output average waiting time\\
+3. Define function for SJF scheduling\\
+\hspace*{1cm} 3.1. Initialize "completed", "total\_waiting", and "current\_time" to 0\\
+\hspace*{1cm} 3.2. Track completion status with "is\_completed"\\
+\hspace*{1cm} 3.3. While not all processes are completed, repeat steps 3.4-3.8 until all processes are completed\\
+\hspace*{1cm} 3.4. Select the shortest available process\\
+\hspace*{1cm} 3.5. Compute completion, turnaround, and waiting times\\
+\hspace*{1cm} 3.6. Add waiting time to "total\_waiting"\\
+\hspace*{1cm} 3.7. Mark process as completed\\
+\hspace*{1cm} 3.8. Update "current\_time"\\
+\hspace*{1cm} 3.9. Output average waiting time\\
+4. Define function for priority scheduling\\
+\hspace*{1cm} 4.1. Initialize "completed", "total\_waiting", and "current\_time" to 0\\
+\hspace*{1cm} 4.2. Track completion status with "is\_completed"\\
+\hspace*{1cm} 4.3. While not all processes are completed, repeat steps 4.4-4.8 until all processes are completed\\
+\hspace*{1cm} 4.4. Select highest-priority available process\\
+\hspace*{1cm} 4.5. Compute completion, turnaround, and waiting times\\
+\hspace*{1cm} 4.6. Add waiting time to "total\_waiting"\\
+\hspace*{1cm} 4.7. Mark process as completed\\
+\hspace*{1cm} 4.8. Update "current\_time"\\
+\hspace*{1cm} 4.9. Output average waiting time\\
+5. Define function for round robin scheduling\\
+\hspace*{1cm} 5.1. Initialize "current\_time", "completed", and "total\_waiting" to 0\\
+\hspace*{1cm} 5.2. Track remaining burst time with "remaining\_time"\\
+\hspace*{1cm} 5.3. While not all processes are completed, repeat steps 5.4-5.8 until all processes are completed\\
+\hspace*{1cm} 5.4. Select a process with remaining burst time\\
+\hspace*{1cm} 5.5. Execute for a time slice or remaining time\\
+\hspace*{1cm} 5.6. Update "current\_time" and "remaining\_time"\\
+\hspace*{1cm} 5.7. If process completes, compute turnaround and waiting times\\
+\hspace*{1cm} 5.8. Update "total\_waiting"\\
+\hspace*{1cm} 5.9. Output average waiting time\\
+6. Define function for SRTF scheduling\\
+\hspace*{1cm} 6.1. Initialize "current\_time", "completed", and "total\_waiting" to 0\\
+\hspace*{1cm} 6.2. Track remaining burst time with "remaining\_time"\\
+\hspace*{1cm} 6.3. While not all processes are completed, repeat steps 6.4-6.8 until all processes are completed\\
+\hspace*{1cm} 6.4. Select process with shortest remaining time\\
+\hspace*{1cm} 6.5. Execute for 1 time unit\\
+\hspace*{1cm} 6.6. Update "current\_time" and remaining time\\
+\hspace*{1cm} 6.7. If process completes, compute turnaround and waiting times\\
+\hspace*{1cm} 6.8. Update "total\_waiting"\\
+\hspace*{1cm} 6.9. Output average waiting time\\
+7. Read number of processes, $n$\\
+8. Read process list (ID, Arrival Time, Burst Time, Priority)\\
+9. Sort process list by arrival time\\
+10. Compute average waiting times using all scheduling algorithms\\
+11. Output best scheduling algorithm with lowest average waiting time\\
+12. Stop\\

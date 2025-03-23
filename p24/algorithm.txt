@@ -1,19 +1,18 @@
 1. Start\\
-2. Read inputs from the command line arguments\\
-3. Compute page table details\\
-\hspace*{1cm} 3.1. Convert virtual address space size from MB to bytes: VAS_bytes = virtual_address_space_size * 1024 * 1024\\
-\hspace*{1cm} 3.2. Convert page size from KB to bytes: page_size_bytes = page_size * 1024\\
-\hspace*{1cm} 3.3. Compute the total number of pages: page_count = VAS_bytes / page_size_bytes\\
+2. Read inputs from the command line arguments.\\
+3. Compute page table details.\\
+\hspace*{1cm} 3.1. Convert virtual address space size from MB to kB.\\
+\hspace*{1cm} 3.2. Compute the total number of pages.\\
 4. Initialize page table\\
-\hspace*{1cm} 4.1. Allocate memory for the page table (array of size page_count).\\
-\hspace*{1cm} 4.2. Populate the page table with random frame mappings\\
+\hspace*{1cm} 4.1. Allocate memory for the page table.\\
+\hspace*{1cm} 4.2. Populate the page table with random frame mappings.\\
 5. Perform address translation\\
-\hspace*{1cm} 5.1. Compute the page number (VPN): page_number = virtual_address / page_size_bytes \\
-\hspace*{1cm} 5.2. Compute the offset within the page: offset = virtual_address % page_size_bytes\\
+\hspace*{1cm} 5.1. Compute the page number.\\ 
+\hspace*{1cm} 5.2. Compute the offset within the page.\\
 6. Validate address translation \\
-\hspace*{1cm} 6.1. If page_number >= page_count, print "Invalid virtual address!" and exit.\\
-\hspace*{1cm} 6.2. If page_table[page_number] == -1, print "Page Table Miss!" and exit.\\
+\hspace*{1cm} 6.1. If page number is less than or equal to page count, output "Invalid virtual address!" and exit.\\
+\hspace*{1cm} 6.2. If frame corresponding to page number is -1, output "Page Table Miss!" and exit.\\
 7. Compute and output physical address\\
-\hspace*{1cm} 7.1. Retrieve the frame number from the page table: frame_number = page_table[page_number]\\
-\hspace*{1cm} 7.2. Print the physical address in ⟨ frame number, offset ⟩ format.\\
+\hspace*{1cm} 7.1. Retrieve the frame number from the page table.\\
+\hspace*{1cm} 7.2. Output the physical address in ⟨ frame number, offset ⟩ format.\\
 8. Stop \\

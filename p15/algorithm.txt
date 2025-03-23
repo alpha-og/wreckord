@@ -21,4 +21,7 @@
 \hspace*{1cm} 6.3. If a partition has enough size and is not allocated and its size is smaller than \hspace*{2cm} min\_size, update index and min\_size.\\
 \hspace*{1cm} 6.4. If a suitable partition is found, allocate it, update its allocation status, and \hspace*{2cm} return its index.\\
 \hspace*{1cm} 6.5. If no suitable partition is found, return -1.\\
-7. Stop\\
+7. Display a menu to select the algorithm to run\\
+8. Read the size of partition from the user\\
+9. Execute the selected algorithm\\
+10. Stop\\

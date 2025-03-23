@@ -3,7 +3,7 @@
 3. Validate the arguments to ensure that they are within the correct range\\
 4. Generate a random list of cylinder request\\
 5. Define a function to simulate head movement and track the head movement count\\
-\hspace*{1cm} . Define a function to simulate the FCFS algorithm  \\
+6. Define a function to simulate the FCFS algorithm  \\
 \hspace*{1cm} 6.1. Start from the initial head position.  \\
 \hspace*{1cm} 6.2. Iterate through the list of cylinder requests in the given order.  \\
 \hspace*{1cm} 6.3. Move the head to each requested cylinder.  \\
