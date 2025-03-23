@@ -1,0 +1,64 @@
+\documentclass[a4paper, 12pt]{article}
+
+% Page layout settings
+\usepackage[a4paper, left=2cm, right=1cm, top=2cm, bottom=1cm]{geometry}
+\usepackage{minted}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{graphicx} % for image inclusion
+\usepackage{float} % for positioning images
+\usepackage{array}
+\usepackage{fancyhdr}  % Load fancyhdr package
+\renewcommand{\headrulewidth}{0pt}  % Remove the horizontal line in header
+\pagestyle{empty}  % Start with an empty default style
+
+\pagestyle{fancy}  
+\fancyhf{}  
+\fancyhead[L]{Date: }  % Increase font size & bold
+\fancyhead[R]{Page No: } 
+
+\pagenumbering{gobble}
+
+\begin{document}
+\newpage
+\begin{center}
+\section*{\LARGE \textbf{\underline{<title>}}} % replace with relevant experiment number (shell scripting experiments 2 - 9)
+\end{center}
+
+\subsection*{\underline{AIM}}
+\begin{quote}
+<aim>
+\end{quote}
+
+\subsection*{\underline{ALGORITHM}}
+\begin{quote}
+<algorithm>
+\end{quote}
+
+\subsection*{\underline{PROGRAM}}
+\begin{quote}
+<code>
+\end{quote}
+
+% OUTPUT
+
+\subsection*{\underline{OUTPUT}}
+
+\begin{figure}[H] 
+    \centering
+    \fbox{
+        \begin{minipage}{0.8\textwidth} % Adjusts width dynamically
+            \centering
+            <output>
+        \end{minipage}
+    }
+\end{figure}
+
+% RESULT
+
+\subsection*{\underline{RESULT}}
+\begin{quote}
+<result>
+\end{quote}
+
