@@ -219,7 +219,7 @@ jq -c '.experiments[]' "$JSON_FILE" | while read -r experiment; do
 	tmp_page=${tmp_page//$TEMPLATE_STRING_OUTPUT/$output_ss_filled_template} # inject output
 	tmp_page=${tmp_page//$TEMPLATE_STRING_RESULT/$result}                    # inject result
 
-	echo "$tmp_page" >"$output_file"
+	printf '%s\n' "$tmp_page" >"$output_file"
 	echo "Completed generating '$output_file'."
 done
 
